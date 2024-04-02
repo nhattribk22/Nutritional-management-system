@@ -11,15 +11,20 @@ import lombok.Setter;
 @Getter
 @Setter
 @CollectionName("Ingredient")
+@Validated
 public class RawMaterials {
 
+    @NotNull
     @Positive
     private Double Protein;
     @Positive
+    @NotNull
     private Double Carb;
     @Positive
+    @NotNull
     private Double Fat;
     @Positive
+    @NotNull
     private Double Calories;
 
     // public RawMaterials(String name, Double Protein, Double Carb, Double Fat, Double Calories) {
