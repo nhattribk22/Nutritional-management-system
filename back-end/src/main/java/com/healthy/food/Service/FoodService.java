@@ -59,9 +59,12 @@ public class FoodService {
     public String createMaterials(RawMaterials rawMaterials, String name) throws InterruptedException, ExecutionException {
         if (name.isEmpty()) 
             return "Create - You have to specify a name";
-
-        Firestore dbFirestore = FirestoreClient.getFirestore();
-        ApiFuture<WriteResult> writeResult = dbFirestore.collection(RawMaterials.class.getAnnotation(CollectionName.class).value()).document(name).set(rawMaterials);
+            Firestore dbFirestore = FirestoreClient.getFirestore();
+            DocumentReference documentReference= dbFirestore.collection(RawMaterials.class.getAnnotation(CollectionName.class).value()).document(name);
+            if (documentReference != null) {
+                return "Create - Can't create " + name + " because of existing file";
+            }
+        ApiFuture<WriteResult> writeResult = documentReference.set(rawMaterials);
         return "Create - Successfully create: " + rawMaterials.toString() ; 
     }
 }
