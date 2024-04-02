@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-color: #fb6d48;
+  --primary: #fcac6ab0;
+  --black: #141414;
+  --white: #f2f2f2;
+  --light-black: #666;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 6rem; */
+}
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+  background: var(--white);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+section {
+  padding-top: 4rem;
+}
+
+.container-fluid {
+  padding: 0px 0px;
+}
+.row {
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.btn {
+  color: var(--main-color);
+  border: 0.1rem solid var(--main-color);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  padding: 1rem 3rem;
+}
+
+.btn:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+.heading {
+  text-align: center;
+  color: var(--main-color);
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  font-size: 4rem;
+}
+
+.display-4 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--black);
+}
+
+/* header */
+.navbar {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: var(--primary);
+  padding: 2rem 1.5%;
+}
+.navbar .logo {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: var(--main-color);
+}
+.navbar .collapse a {
+  font-size: 1.7rem;
+  margin-right: 2rem;
+  color: var(--black);
+  font-weight: 300;
+}
+.navbar .collapse .last {
+  margin-right: 0rem;
+  margin-left: 1rem;
+}
+
+.navbar .collapse a:hover {
+  color: var(--main-color);
+}
+
+.navbar .navbar-toggler-icon {
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+
+.navbar #btn {
+  color: var(--main-color);
+  border: 0.1rem solid var(--main-color);
+  border-radius: 0.5rem;
+  width: fit-content;
+  padding: 1rem 1rem;
+  margin-right: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.navbar #btn:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+.lead {
+  font-size: 1.6rem;
+  color: var(--light-black);
+  padding: 2rem 0;
+  line-height: 2;
+}
+
+.heading {
+  text-transform: capitalize;
+  color: var(--main-color);
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* home section */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(images/background.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home .lead {
+  padding: 0px;
+  font-weight: 300;
+  width: 48%;
+  color: var(--light-black);
+  line-height: 2.8rem;
+  margin-bottom: 3%;
+}
+
+.home .btn {
+  margin: 0px 0.5rem;
+}
+
+.about .col-12 h3 {
+  font-size: 3.5rem;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.pictures {
+  padding: 0%;
+}
+
+/* services */
+/* .services .content {
+  border: 2px solid var(--main-color);
+  border-radius: 2rem;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.services .content {
+  height: 100%;
+}
+.services .heading {
+  font-weight: 400;
+}
+
+.services .image {
+  padding: 7% 20%;
+  padding-top: 3%;
+}
+
+.services hr {
+  border: 1px solid var(--main-color);
+  margin: 5% 20%;
+  margin-top: 1%;
+}
+
+.services p {
+  color: var(--light-black);
+}
+
+@media (max-width: 1199px) {
+  .services .content {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    margin-bottom: 1.5rem;
+  }
+} */
+
+.services .sub-headings {
+  margin-top: 30px;
+}
+.services {
+  padding-top: 0px;
+}
+
+.services .contents p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.services h3 {
+  margin-bottom: 40px;
+}
+
+.services .btn {
+  margin-top: 20px;
+}
+
+/* review */
+.review .row {
+  background: url(images/background4.png) no-repeat;
+  background-size: cover;
+}
+
+.review .col-11 {
+  border: 2px solid var(--white);
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: 1.5rem;
+  padding: 1rem 3rem;
+}
+
+.review .col-11 img {
+  border-radius: 100%;
+  max-width: 10rem;
+}
+
+.review .mt-auto {
+  padding-top: 7%;
+}
+
+.review .ri-double-quotes-l {
+  font-size: 4rem;
+  color: #6ec9db;
+}
+
+.review .card-content {
+  /* padding-left: 100%; */
+  /* border: 2px solid black; */
+  width: 100%;
+}
+
+.review .card-content .lead {
+  font-style: italic;
+}
+
+/* footer */
+.footer .icons {
+  font-size: 3rem;
+  color: black;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: var(--primary);
+}
+
+ul {
+  list-style: none;
+}
+
+/* link */
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.example-2 .icon-content .tooltips {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltips {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltips {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltips {
+  background-color: #24262a;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltips {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltips {
+  background-color: #ff0000;
+}
+
+.footer form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1306c;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.footer .formIcon {
+  font-size: 23px;
+  margin-right: 10px;
+}
+
+.footer input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #212529;
+  font-size: 1.3rem;
+}
+
+.footer form button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer .lead {
+  font-weight: 600;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 3px;
+}
+
+.footer .pt-4 p,
+a {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #212529;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+}
+
+.footer .col-10 {
+  padding: 0px 5%;
+  padding-bottom: 30px;
+}
+
+.footer .last {
+  padding: 0px 5%;
+}
+
+/* benefit */
+.benefit .icon {
+  font-size: 50px;
+}
+
+.benefit .lead {
+  padding: 0%;
+  padding-left: 7.5px;
+}
+.benefit .col-8 p {
+  font-size: 1.25rem;
+  color: var(--light-black);
+  font-weight: 400;
+}
+
+.benefit .col-8 .headings {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 6%;
+}
+
+/* FAQ */
+.FAQ .lead {
+  padding: 0%;
+  padding-left: 7.5px;
+}
+.FAQ .col-10 p {
+  font-size: 1.25rem;
+  color: var(--light-black);
+  font-weight: 400;
+}
+
+.FAQ .headings {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 2%;
+}
+.FAQ {
+  padding-bottom: 40px;
+}
+
+.FAQ .col-md-6 {
+  padding: 0px 30px;
+  height: 100%;
+}
