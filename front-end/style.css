@@ -159,6 +159,9 @@ section {
   margin: 0px 0.5rem;
 }
 
+.about .heading {
+  padding-bottom: 12px;
+}
 .about .col-12 h3 {
   font-size: 3.5rem;
   color: var(--black);
@@ -166,6 +169,13 @@ section {
 }
 .pictures {
   padding: 0%;
+}
+.about .contents {
+  padding: 30px 30px;
+}
+
+.about .lead {
+  font-weight: 300;
 }
 
 /* services */
@@ -211,7 +221,12 @@ section {
 .services {
   padding-top: 0px;
 }
-
+.services .container {
+  padding: 30px;
+}
+.services .lead {
+  padding: 0%;
+}
 .services .contents p {
   font-size: 1.5rem;
   font-weight: 300;
