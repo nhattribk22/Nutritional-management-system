@@ -5,6 +5,8 @@ import com.healthy.food.Ingredients.RawMaterials;
 import com.healthy.food.Repository.RawMaterialsRepository;
 import com.healthy.food.Service.FoodService;
 
+import jakarta.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,39 +31,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @RequestMapping("/Home/Ingredients")
 public class Controll {
 
-    // @Autowired
-    // private final RawMaterialsRepository rawMaterialsRepository = new RawMaterialsRepository();
-
-    // @GetMapping
-    // public List<RawMaterials> getAll(){
-    //    return rawMaterialsRepository.findAll();
-    // }
-    // @GetMapping("/getOne")
-    // public Optional<RawMaterials> getOne(@RequestParam String name) {
-    //     return rawMaterialsRepository.getOne(name);
-    // }
-    
-    // @PostMapping("/create")
-    // public String save(@RequestBody RawMaterials rawMaterials) {
-    //     //TODO: process POST request
-        
-    //     rawMaterialsRepository.save(rawMaterials);
-    //     return "Successfully saved";
-    // }
-    
-    // @PutMapping("/update")
-    // public String update(@RequestParam String name, @RequestBody RawMaterials rawMaterials) {
-    //     //TODO: process PUT request
-    //     rawMaterialsRepository.update(rawMaterials, name);
-    //     return "Successfully updated";
-    // }
-
-    // @DeleteMapping("/delete")
-    // public String delete(@RequestParam String name) {
-    //     //TODO: process DELETE request
-    //     rawMaterialsRepository.delete(name);
-    //     return "Successfully deleted";
-    // }
 
     public FoodService foodService;
 
@@ -76,7 +45,7 @@ public class Controll {
     }
     
     @PutMapping("/Firebase/update")
-    public String UpdateForFirebase(@RequestBody RawMaterials rawMaterials, @RequestParam String name) throws InterruptedException, ExecutionException {
+    public String UpdateForFirebase(@RequestBody @Valid RawMaterials rawMaterials, @RequestParam String name) throws InterruptedException, ExecutionException {
         //TODO: process PUT request
         
         return foodService.updateMaterials(rawMaterials, name);
@@ -89,7 +58,7 @@ public class Controll {
     }
 
     @PostMapping("Firebase/create")
-    public String saveForFirebase(@RequestBody RawMaterials rawMaterials, @RequestParam String name) throws InterruptedException, ExecutionException {
+    public String saveForFirebase(@RequestBody @Valid RawMaterials rawMaterials, @RequestParam String name) throws InterruptedException, ExecutionException {
         //TODO: process POST request
         
         return foodService.createMaterials(rawMaterials, name);
