@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dietplan-de05b",
+  "private_key_id": "2bcde609886963f6d4c06c6e81ed97d211a38016",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC6w6lrcMzznXWt\n3t8IUpxwm3WBzPAZddvEBiOO/3SywyfGh2wZaolOY5tx14X0njvAkIiMApuApvuN\ng3DONKOYWdMdtnnnQJdB+vGNQEHDSyC0l3VegMPzHlyIirQA0WzJobFspOCTjr+z\nJZnSLhgfJApFBfee0bt+iZMw7JyOYWkHdXbZYGWECafXwa/T5KUmOlLE18rysJFV\n4qa7hTJLUDcYl56zmcwcBeXrblVCDBFAE9XP5UhSeoJVUou6AbxAoHRVHv0Qnh/K\nY4kJt3KZ4/RRPU21EX0+SMgJg14iFHkaY/hbJelQJ8QjA5WRf/uOqZcy29rG31rP\nqHT7JgwhAgMBAAECggEAAr+ES6zCPJzG3C3DsbdSzqQK9kOnY3Mvg6fkzWLcOxEn\nZwLGcsKgOJi7SHviYGIVAQAKHP1Lf84f33TdVmYXONOsM+tjyc+n1Mm2KjJAMCPN\nMbsUzV+EV/HMwhmVt86yahkd/OTu2lz8XHd41vXkrE33H2LiF40rKXEpdaErAJFP\nOofzjJKdZgVYIEGrv3AB/2UQ278oyEnEadGSovtMb2gvRI6Y7QhJzG2A4YYuOOD0\ntZuRolpMT41AvwfThmpm/ga/ndPr4zyLlpMuLoESzhBI8Uv7ATGYAAayik/TU7Fz\nnhYLAKMaugnG9SU7heNC6u3Tb+yL0rc8NAqFkOAKPQKBgQD0RrBXmxjmhpe4/9St\n4i0yXKVFjxzWq6Wo+NDPEDtg8lopb7ksCIPVPAT69+Ny5PSkk5ZkgHt8owa2j5P4\ng01o/Tg7wp3W3cI84vdjI+sdtjPGe1vpc1Kz1DZzdG1gQH8VixrMAex9DwSeQT5h\nVs9QSSKmtiq/JHhgCPfXVnyZ1wKBgQDDulnZ/m9S7jRk0UEo8HRCAugTdDL7gNt3\n04+NuMGFlxfaq3iOjWKNeJFW0Aq6+FfdnRuCUiymeJ2/1u+3V3b7dNpg8oy6dw7Q\nd14kkMfTN0lw7traFBpSaI8gjFEcLxITmXa4xxmO/jGpTy5q4kIFNv6RhAp2AEYr\n5yZpPZZ6xwKBgQDs2P1yc/eYzTefMK7OSlb4VcwJvdGAc72UMGyF2H86aMHzG1i3\n0SnCPwe1L1VhuY1bZZ6Uo98X4hpIOL6IXwdXnO5BQ1o3U51Z29dyUQlPLbLV6BYe\nLKsrob+KAoFqqh6OjOnWlKbwOveHWktZpgotFjx62HZqDrqIoylrqXf20QKBgG09\nuxyCd9vPe4qxiC6zVg/p02HYPwREfTm56Ktu7QQEupmfjp/xpYnUOzo6z2JfbZsR\nLuNjvewD8fe6nPy1YoEiTShC9+yyup/7n53E+OKYPvM7PQbupWpNVWUTK8oRM4Og\n6bRj244Fre4TdZLOSY7jjN3m1nfZ21BxqOygJTbNAoGAaGcI34mJWgwPg9sDrlrp\nP+BfxyRRqBsh8sJBDjQ9xIy8KiM8VYU2Lwc1ajf1I6NmeWGkGXOxzOBxZ9cABNih\nZ24UUxLz9/Do+PZ+VGnd/SZDziK8xjAvRtT4wKF1cIFOq1LSrdQTNYRSNdqChNl2\n3y5p1TbMsOUvrEYDZgUfb9o=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ks35z@dietplan-de05b.iam.gserviceaccount.com",
+  "client_id": "109623051607754255846",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ks35z%40dietplan-de05b.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

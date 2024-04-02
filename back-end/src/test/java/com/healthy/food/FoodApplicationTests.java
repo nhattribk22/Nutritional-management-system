@@ -1,10 +1,10 @@
-package com.example.javaCode;
+package com.healthy.food;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JavaCodeApplicationTests {
+class FoodApplicationTests {
 
 	@Test
 	void contextLoads() {
