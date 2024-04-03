@@ -46,8 +46,6 @@ function fetchDataFromAPI(url) {
     })
     .then(data => {
       // Search raw
-      // let keyWords =
-      // let keyWords = data;
       let jsonData = data;
       const foodNames = jsonData.map(item => Object.keys(item)[0]);
       console.log(foodNames);
@@ -127,9 +125,7 @@ function fetchDataFromAPI(url) {
 }
 
 
-// fetchDataFromAPI('./keyWords.json')
 fetchDataFromAPI('./Details.json')
 .then(data => {
-  // Thực hiện các thao tác với dữ liệu ở đây
   console.log(data);
 });
