@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ExecutionException;
 
@@ -64,4 +65,13 @@ public class Controll {
         return foodService.createMaterials(rawMaterials, name);
     }
 
+    @GetMapping("Firebase/getall")
+    public List<Map<String, RawMaterials>> getAll () throws InterruptedException, ExecutionException {
+        return foodService.GetAll();
+    }
+    @GetMapping("Firebase/getallbutnobody")
+    public List<String> GetAll1() throws InterruptedException, ExecutionException {
+        return foodService.GetAll1();
+    }
+    
 }
