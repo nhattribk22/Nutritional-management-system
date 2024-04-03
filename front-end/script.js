@@ -29,34 +29,36 @@ const resultBox = document.querySelector(`.result-box`);
 const inputBox = document.querySelector(`#input-box`);
 var final;
 function selectInput(list) {
-        final = list.textContent;
-        inputBox.value = list.innerHTML;
-        resultBox.innerHTML = ``;
+  final = list.textContent;
+  inputBox.value = list.innerHTML;
+  resultBox.innerHTML = ``;
 }
-
-
 
 function fetchDataFromAPI(url) {
   return fetch(url)
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error("Network response was not ok");
       }
       return response.json();
     })
-    .then(data => {
+    .then((data) => {
       // Search raw
       let jsonData = data;
-      const foodNames = jsonData.map(item => Object.keys(item)[0]);
+      const foodNames = jsonData.map((item) => Object.keys(item)[0]);
       console.log(foodNames);
-      
+
       // console.log(farr);
-      const strawberryFat = jsonData.find(item => Object.keys(item)[0] === "Strawberry")["Strawberry"]["fat"];
-      
+      const strawberryFat = jsonData.find(
+        (item) => Object.keys(item)[0] === "Strawberry"
+      )["Strawberry"]["fat"];
+
       console.log(strawberryFat); // Output: 0.3
       let keyWords = foodNames;
+      inputBox.addEventListener("click", function () {
+        if (!inputBox.value) display(foodNames);
+      });
       inputBox.onkeyup = function () {
-        
         let result = [];
         let input = inputBox.value;
         if (input.length) {
@@ -66,44 +68,43 @@ function fetchDataFromAPI(url) {
           // console.log(result, typeof result);
         }
         display(result);
-        
+
         if (!result.length) {
           resultBox.innerHTML = ``;
         }
       };
-      
-      
+
       function display(result) {
         const textContent = result.map((list) => {
           return `<li onclick=selectInput(this)> ${list} </li>`;
         });
         resultBox.innerHTML = "<ul>" + textContent.join("") + "</ul>";
       }
-      
-      
+
       // Show material
       const numOutput = document.querySelectorAll(`.material`);
-      
+
       const calo = document.querySelector(`.calory`);
       const carb = document.querySelector(`.carb`);
       const protein = document.querySelector(`.protein`);
       const fat = document.querySelector(`.fat`);
       const searchBtn = document.querySelector(`.searchBtn`);
-      
-      
+
       let material = {
         calories: 1800,
         carb: 20,
         fat: 30,
         protein: 230,
       };
-      
+
       searchBtn.addEventListener("click", function () {
         // console.log(input);
         final = final.slice(0, -1);
         final = final.substring(1);
 
-        const customVariable = jsonData.find(item => Object.keys(item)[0] === final)[final];
+        const customVariable = jsonData.find(
+          (item) => Object.keys(item)[0] === final
+        )[final];
         console.log(customVariable);
         calo.textContent = customVariable.calories;
         carb.textContent = customVariable.carb;
@@ -119,13 +120,11 @@ function fetchDataFromAPI(url) {
       // Return data for further processing if necessary
       return data;
     })
-    .catch(error => {
-      console.error('There was a problem with the fetch operation:', error);
+    .catch((error) => {
+      console.error("There was a problem with the fetch operation:", error);
     });
 }
 
-
-fetchDataFromAPI('./Details.json')
-.then(data => {
+fetchDataFromAPI("./Details.json").then((data) => {
   console.log(data);
 });

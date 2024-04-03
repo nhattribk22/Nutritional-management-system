@@ -67,6 +67,7 @@ section {
   margin-bottom: 4rem;
   margin-top: 2rem;
   font-size: 4rem;
+  padding: 0px 0px;
 }
 
 .display-4 {
@@ -475,12 +476,14 @@ a {
   font-size: 1.25rem;
   color: var(--light-black);
   font-weight: 400;
+  padding-left: 20%;
 }
 
 .FAQ .headings {
   font-size: 3rem;
   margin-bottom: 1rem;
   padding-top: 2%;
+  padding-left: 20%;
 }
 .FAQ {
   padding-bottom: 40px;
@@ -489,4 +492,10 @@ a {
 .FAQ .col-md-6 {
   padding: 0px 30px;
   height: 100%;
+}
+
+@media (max-width: 991px) {
+  .footer .link {
+    display: none;
+  }
 }
