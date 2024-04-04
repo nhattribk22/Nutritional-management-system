@@ -1,0 +1,91 @@
+{
+    "question": [
+      {
+        "question": "What are some good sources of protein?",
+        "answers": [
+          "Lean meats such as chicken, turkey, and fish",
+          "Legumes such as beans, lentils, and chickpeas",
+          "Dairy products such as milk, yogurt, and cheese",
+          "Nuts and seeds such as almonds, chia seeds, and peanuts"
+        ]
+      },
+      {
+        "question": "Hello",
+        "answers": "Hey there!"
+      },
+      {
+        "question": "How much protein per day is necessary for good health?",
+        "answers": "The recommended daily intake of protein depends on various factors, but a general guideline is around 0.8 grams of protein per kilogram of body weight or about 0.36 grams of protein per pound of body weight. For example, a person weighing 150 pounds would need approximately 54 grams of protein per day."
+      },
+      {
+        "question": "What are some healthy sources of fats?",
+        "answers": "Healthy sources of fats include olive oil, flaxseed oil, chia seeds, and avocados. Fatty fish, nuts, and seeds are also beneficial for health."
+      },
+      {
+        "question": "How many servings of fruits and vegetables should I eat each day?",
+        "answers": "It is recommended to consume at least 5 servings of fruits and vegetables per day. A serving can be a small piece of fruit, half a large fruit, or a cup of leafy greens."
+      },
+      {
+        "question": "What are some high-fiber foods?",
+        "answers": "Some high-fiber foods include whole grains, nuts, mixed berries, legumes, and leafy vegetables."
+      },
+      {
+        "question": "How can I control my daily calorie intake?",
+        "answers": "To control your daily calorie intake, you can track your food intake, use calorie counting tools, or follow principles of balanced eating such as eating smaller, more frequent meals, eating mindfully, and avoiding calorie-dense, nutrient-poor foods."
+      },
+      {
+        "question": "Which foods are beneficial for heart health?",
+        "answers": "Foods that are beneficial for heart health include fatty fish rich in omega-3 fatty acids, nuts, seeds, whole grains, leafy greens, and fresh fruits."
+      },
+      {
+        "question": "What should I eat for a healthy digestive system?",
+        "answers": "To maintain a healthy digestive system, you should consume foods high in fiber such as leafy greens, nuts, seeds, and whole grains. Additionally, staying hydrated and engaging in regular physical activity are important."
+      },
+      {
+        "question": "Which foods are rich in calcium?",
+        "answers": "Calcium-rich foods include dairy products such as milk, yogurt, and cheese, as well as fish, leafy greens, nuts, and legumes."
+      },
+      {
+        "question": "What foods can boost the immune system?",
+        "answers": "Foods rich in antioxidants such as fruits, vegetables, nuts, and seeds, as well as probiotic-rich foods like yogurt, can help boost the immune system."
+      },
+      {
+        "question": "How can I maintain a balanced eating lifestyle?",
+        "answers": "To maintain a balanced eating lifestyle, you can make small changes such as choosing nutrient-dense whole foods, reducing processed food intake, limiting added sugars, unhealthy fats, and sodium, incorporating a variety of colorful fruits and vegetables into your meals, controlling portion sizes, and practicing mindful eating. Additionally, regular exercise and adequate sleep and relaxation are also important."
+      },
+      {
+        "question": "What are the benefits of eating fruits and vegetables?",
+        "answers": [
+          "Rich in vitamins, minerals, and antioxidants",
+          "Promote overall health and reduce the risk of chronic diseases",
+          "Provide fiber for digestive health",
+          "Help maintain a healthy weight"
+        ]
+      },
+      {
+        "question": "How much water should I drink per day?",
+        "answers": [
+          "The general recommendation is to drink about 8 glasses of water per day, but individual needs may vary based on factors such as age, weight, activity level, and climate."
+        ]
+      },
+      {
+        "question": "What are some healthy snack options?",
+        "answers": [
+          "Fresh fruits such as apples, bananas, and berries",
+          "Vegetable sticks with hummus or guacamole",
+          "Greek yogurt with nuts and seeds",
+          "Air-popped popcorn"
+        ]
+      },
+      {
+        "question": "How can I make healthier food choices?",
+        "answers": [
+          "Choose whole, unprocessed foods whenever possible",
+          "Read food labels and avoid products high in added sugars, unhealthy fats, and sodium",
+          "Incorporate a variety of colorful fruits and vegetables into your meals",
+          "Limit portion sizes and practice mindful eating"
+        ]
+      }
+    ]
+  }
+  
