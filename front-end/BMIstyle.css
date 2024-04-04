@@ -6,6 +6,18 @@
   --light-black: #666;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  border: 1px solid var(--light-black);
+  margin: 10px 20%;
+}
+
+.review .submitBtn {
+  margin-bottom: 20px;
+}
 .review .input-group-text {
   color: var(--main-color);
   font-size: 2rem;
@@ -20,8 +32,22 @@
   width: 50px;
 }
 
+.review .height,
+.weight {
+  padding: 0%;
+}
+
 .review .main {
-  padding-top: 8%;
+  padding-top: 2%;
+}
+
+.message {
+  padding: 0%;
+}
+
+.review .age {
+  padding: 0%;
+  padding-right: 50px;
 }
 
 .review .form-control {
@@ -36,7 +62,7 @@
 
 .review {
   padding: 0%;
-  height: 100vh;
+  height: 100%;
   background: url(images/background4.png) no-repeat;
   background-size: cover;
 }
@@ -103,4 +129,103 @@
   transform: scale(1.2);
   border-color: var(--main-color);
   box-shadow: 0 0 20px var(--primary);
+}
+
+.hidden {
+  display: none;
+}
+
+/* calo */
+.calo .search-box {
+  background: var(--primary);
+  border-radius: 5px;
+  padding: 0%;
+}
+
+.calo .container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.calo input {
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  font-size: 18px;
+  color: var(--light-black);
+  width: 100%;
+}
+
+.calo .icon {
+  font-size: 25px;
+  color: var(--light-black);
+}
+
+.calo .mainContainer {
+  background-color: var(--white);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.calo ::placeholder {
+  color: var(--light-black);
+}
+
+.result-box ul {
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+}
+
+.result-box ul li {
+  list-style: none;
+  font-size: 18px;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+  color: var(--light-black);
+}
+
+.result-box ul li:hover {
+  background-color: var(--primary);
+}
+
+.result-box {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.calo .heads {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 15rem;
+}
+.calo .donvi {
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.calo .material {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.calo .h1-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+}
+.calo .fi {
+  margin-top: 40px;
+}
+
+.calo .se {
+  margin: 20px 0px;
+}
+
+.calo .hiddenCalo {
+  opacity: 0;
 }
