@@ -7,6 +7,7 @@ const output = document.querySelector(`.display-4`);
 const message = document.querySelector(`.message`);
 const hidden = document.querySelector(`.hidden`);
 const str = `, here are our advises`;
+const url = 'http://localhost:8080/Home/Ingredients/Firebase/getall';
 submitBtn.addEventListener("click", function () {
   const h = height.value / 100;
   const w = weight.value;
@@ -125,6 +126,6 @@ function fetchDataFromAPI(url) {
     });
 }
 
-fetchDataFromAPI("./Details.json").then((data) => {
+fetchDataFromAPI(url).then((data) => {
   console.log(data);
 });
